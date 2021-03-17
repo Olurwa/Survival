@@ -5,6 +5,8 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
+import fr.doritanh.olurwa.survival.Survival;
+
 public class PlayerListener implements Listener {
 
 	@EventHandler
@@ -13,6 +15,7 @@ public class PlayerListener implements Listener {
 			e.getPlayer().setGameMode(GameMode.SURVIVAL);
 		} else {
 			e.getPlayer().setGameMode(GameMode.SPECTATOR);
+			e.getPlayer().teleport(Survival.get().getSpawnWorld().getSpawnLocation());
 		}
 	}
 
