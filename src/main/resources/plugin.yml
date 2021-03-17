@@ -1,0 +1,4 @@
+name: Survival
+version: 1.0
+main: fr.doritanh.olurwa.survival.Survival
+api-version: 1.16
