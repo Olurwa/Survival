@@ -2,3 +2,13 @@ name: Survival
 version: 1.0
 main: fr.doritanh.olurwa.survival.Survival
 api-version: 1.16
+
+permissions:
+    survival.play:
+        description: Authorise à jouer sur le serveur
+        default: op
+    lobby.*:
+        description: Tout le plugin survival
+        default: op
+        children:
+            survival.play: true
